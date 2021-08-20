@@ -1469,7 +1469,7 @@
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "9085ea94f6e24486a6fae5b71efdae04"}
+{"version_major": 2, "version_minor": 0, "model_id": "2427425931f24974a6981134a6d05b20"}
 </script></div>
 </div>
 </div>
@@ -1502,12 +1502,6 @@
 <span class="kn">from</span> <span class="nn">plotly.colors</span> <span class="kn">import</span> <span class="n">qualitative</span>
 <span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = 'retina'
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/NeuromatchAcademy/course-content/NMA2020/nma.mplstyle"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class="-Color -Color-Yellow">WARNING: You are using pip version 21.2.3; however, version 21.2.4 is available.</span>
-<span class="-Color -Color-Yellow">You should consider upgrading via the '/opt/hostedtoolcache/Python/3.7.11/x64/bin/python -m pip install --upgrade pip' command.</span>
 </pre></div>
 </div>
 </div>
@@ -2329,12 +2323,12 @@ shape input_test 	 torch.Size([10000, 784])
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2285</span><span class="o">/</span><span class="mf">285641839.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2341</span><span class="o">/</span><span class="mf">285641839.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> 
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">runSGD</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">input_train</span><span class="p">,</span> <span class="n">input_test</span><span class="p">,</span> <span class="n">n_epochs</span><span class="o">=</span><span class="n">n_epochs</span><span class="p">,</span>
 <span class="ne">----&gt; </span><span class="mi">5</span>        <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">)</span>
 
-<span class="nn">/tmp/ipykernel_2285/3487241110.py</span> in <span class="ni">runSGD</span><span class="nt">(net, input_train, input_test, criterion, n_epochs, batch_size, verbose)</span>
+<span class="nn">/tmp/ipykernel_2341/3487241110.py</span> in <span class="ni">runSGD</span><span class="nt">(net, input_train, input_test, criterion, n_epochs, batch_size, verbose)</span>
 <span class="g g-Whitespace">    </span><span class="mi">586</span> 
 <span class="g g-Whitespace">    </span><span class="mi">587</span>       <span class="n">output_train</span> <span class="o">=</span> <span class="n">net</span><span class="p">(</span><span class="n">batch</span><span class="p">)</span>
 <span class="ne">--&gt; </span><span class="mi">588</span>       <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">output_train</span><span class="p">,</span> <span class="n">batch</span><span class="p">)</span>
@@ -2471,26 +2465,35 @@ shape input_test 	 torch.Size([10000, 784])
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 	 Loss train 	 Loss test
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/10	 0.1874		 0.1880
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/10	 0.1834		 0.1831
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2/10	 0.1756		 0.1760
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2/10	 0.1731		 0.1732
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3/10	 0.1691		 0.1698
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3/10	 0.1669		 0.1675
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4/10	 0.1659		 0.1667
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4/10	 0.1635		 0.1642
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5/10	 0.1612		 0.1622
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6/10	 0.1587		 0.1598
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7/10	 0.1572		 0.1585
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2285</span><span class="o">/</span><span class="mf">285641839.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2341</span><span class="o">/</span><span class="mf">285641839.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> 
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">runSGD</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">input_train</span><span class="p">,</span> <span class="n">input_test</span><span class="p">,</span> <span class="n">n_epochs</span><span class="o">=</span><span class="n">n_epochs</span><span class="p">,</span>
 <span class="ne">----&gt; </span><span class="mi">5</span>        <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">)</span>
 
-<span class="nn">/tmp/ipykernel_2285/3487241110.py</span> in <span class="ni">runSGD</span><span class="nt">(net, input_train, input_test, criterion, n_epochs, batch_size, verbose)</span>
+<span class="nn">/tmp/ipykernel_2341/3487241110.py</span> in <span class="ni">runSGD</span><span class="nt">(net, input_train, input_test, criterion, n_epochs, batch_size, verbose)</span>
 <span class="g g-Whitespace">    </span><span class="mi">596</span>     <span class="n">loss_epoch</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">n_epochs</span><span class="si">}</span><span class="s1">'</span>
 <span class="g g-Whitespace">    </span><span class="mi">597</span>     <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
 <span class="ne">--&gt; </span><span class="mi">598</span>       <span class="n">output_train</span> <span class="o">=</span> <span class="n">net</span><span class="p">(</span><span class="n">input_train</span><span class="p">)</span>
